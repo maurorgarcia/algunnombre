@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FBF6EA" />
+    <!-- Ícono de la pestaña provisorio (un círculo oliva). Reemplazalo por el logo cuando lo tengan. -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232E3319'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23E3B23C'/%3E%3C/svg%3E"
+    />
+
+    <!-- __NOMBRE__, __ESLOGAN__ y __DESCRIPCION__ se reemplazan solos desde src/config.js -->
+    <title>__NOMBRE__ · __ESLOGAN__</title>
+    <meta name="description" content="__DESCRIPCION__" />
+
+    <!-- Open Graph: cómo se ve el link al compartirlo por WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:title" content="__NOMBRE__" />
+    <meta property="og:description" content="__DESCRIPCION__" />
+    <!-- FOTO DE PORTADA: cuando publiquen el sitio, subí una imagen de 1200x630 a /public/og.png
+         y activá estas dos líneas con la URL real (tiene que ser absoluta):
+    <meta property="og:image" content="https://TU-DOMINIO.com/og.png" />
+    <meta property="og:url" content="https://TU-DOMINIO.com" />
+    -->
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

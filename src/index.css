@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* para que el menú fijo no tape los títulos al navegar */
+  }
+
+  body {
+    @apply bg-papel-50 font-texto text-tinta-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-titulo;
+  }
+
+  /* Foco visible para quien navega con teclado */
+  :focus-visible {
+    outline: 3px solid theme('colors.mostaza.500');
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    @apply bg-mostaza-300 text-tinta-900;
+  }
+}
+
+@layer components {
+  /* Contenedor general de las secciones */
+  .contenedor {
+    @apply mx-auto w-full max-w-pagina px-5 md:px-8;
+  }
+
+  /* Titulito de sección (arriba del título grande) */
+  .sobretitulo {
+    @apply flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-arcilla-600;
+  }
+  .sobretitulo::before {
+    content: "";
+    @apply h-0.5 w-8 bg-mostaza-500;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
